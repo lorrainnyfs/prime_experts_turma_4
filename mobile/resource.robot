@@ -15,26 +15,24 @@ ${urL_appium_server}          http://localhost:4723/wd/hub
 &{Home}                       icone_busca=accessibility_id=Search
 ...                           campo_texto_busca=search_edit_text
 ...                           icone_home=accessibility_id=Home
-...                           icone_trending=accessibility_id=Trending
+# ...                           icone_trending=accessibility_id=Trending   --Foi retirado na atualização do App
+...                           icone_shorts=id=com.google.android.youtube:id/text
 ...                           icone_subscriptions=accessibility_id=Subscriptions
 ...                           icone_notifications=accessibility_id=Notifications
 ...                           icone_library=accessibility_id=Library
-...                           icone_login=accessibility_id=Account
-
-&{Login}                      sign_in=id=com.google.android.youtube:id/button
-...                           accounts=id=com.google.android.youtube:id/name
-...                           email=//*[@resource-id='identifierId']
-...                           next_email=//android.widget.Button[@text='NEXT']
-...                           senha=//android.view.View/android.view.View[2]/android.view.View
-...                           next_senha=//android.view.View[1]/android.view.View[4]/android.view.View/android.widget.Button
-...                           i_gree=
-
-
+...                           icone_account=//android.widget.ImageView[@content-desc="Account"]
+...                           switch_account=id=com.google.android.youtube:id/switch_account
+...                           sign_out_footer=id=com.google.android.youtube:id/sign_out_footer
+...                           button=id=com.google.android.youtube:id/button
+...                           relativeLayout=//android.widget.RelativeLayout[@content-desc="Lorrainny Ferreira Silva,No channel"]
+...                           recyclerView=//android.support.v7.widget.RecyclerView[@content-desc="filters"]/android.widget.LinearLayout[1]
+...                           viewGroup=//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[1]
+...                           openVideo=//android.view.ViewGroup/android.support.v7.widget.RecyclerView/android.view.ViewGroup[3]
 
 &{Resultados_busca}           canais_sugeridos=channel_item
 
 &{canais}                     playlist=accessibility_id=Playlists
-...                           lista_playlist=playlist_item
+...                           lista_playlist=//android.view.ViewGroup[@content-desc="12ª geração Intel Core - by Adrenaline - 2 videos"]
 
                   
 
@@ -42,13 +40,13 @@ ${urL_appium_server}          http://localhost:4723/wd/hub
 Abrir o aplicativo no celular 
     Open Application    ${urL_appium_server}  &{AppiumCapabilities}
 
-Buscar o canal “${buscar_canaL}” 
+Buscar o canal “${buscar_canal}” 
     [Documentation]   Keyword responsavel por fazer uma busca dentro do youtube app.
     ...               partir de uma string vinda do teste.
-    Wait Until Element Is Visible        ${Home.icone_busca}
+    Wait Until Element Is Visible        ${Home.icone_busca}        30
     Click Element                        ${Home.icone_busca}
     Wait Until Element Is Visible        ${Home.campo_texto_busca}
-    Input Text                           ${Home.campo_texto_busca}        ${buscar_canaL}
+    Input Text                           ${Home.campo_texto_busca}        ${buscar_canal}
     Press Keycode                        66
 
 Selecionar o canal na lista de busca 
@@ -67,8 +65,8 @@ Selecionar a primeira playlist do canal
 Navegar por todos os botões da barra de Menus(Home, Explorar...) do YouTube
     Wait Until Element Is Visible        ${Home.icone_home}
     Click Element                        ${Home.icone_home}
-    Wait Until Element Is Visible        ${Home.icone_trending}
-    Click Element                        ${Home.icone_trending}
+    Wait Until Element Is Visible        ${Home.icone_shorts}
+    Click Element                        ${Home.icone_shorts}
     Wait Until Element Is Visible        ${Home.icone_subscriptions}
     Click Element                        ${Home.icone_subscriptions}
     Wait Until Element Is Visible        ${Home.icone_notifications}
@@ -77,22 +75,33 @@ Navegar por todos os botões da barra de Menus(Home, Explorar...) do YouTube
     Click Element                        ${Home.icone_library}
    
 Logar no aplicativo com a conta x
-    Wait Until Element Is Visible        ${Home.icone_login}
-    Click Element                        ${Home.icone_login}
-    Wait Until Element Is Visible        ${Login.sign_in}
-    Click Element                        ${Login.sign_in}
-    Wait Until Element Is Visible        ${Login.accounts}
-    Click Element                        ${Login.accounts}
-    Wait Until Element Is Visible        ${Login.email}
-    Click Element                        ${Login.email}
-    Input Text                           ${Login.email}  qalorrainny
-    Wait Until Element Is Visible        ${Login.next_email}
-    Click Element                        ${Login.next_email}
-    Wait Until Element Is Visible        ${Login.senha}
-    Click Element                        ${Login.senha}
-    Input Text                           ${Login.senha}  qa25010308
-    # Wait Until Element Is Visible        ${Login.i_gree}
-    # Click Element                        ${Login.i_gree}
+    Wait Until Element Is Visible       ${Home.icone_account}                60
+    Click Element                       ${Home.icone_account}
+    Wait Until Element Is Visible       ${Home.switch_account}               60
+    Click Element                       ${Home.switch_account}
+    Wait Until Element Is Visible       ${Home.sign_out_footer}              60
+    Click Element                       ${Home.sign_out_footer}
+    Sleep  3s
+    Wait Until Element Is Visible       ${Home.icone_account}                60
+    Click Element                       ${Home.icone_account}
+    Wait Until Element Is Visible       ${Home.button}                       60
+    Click Element                       ${Home.button}
+    Wait Until Element Is Visible       ${Home.relativeLayout}               60
+    Click Element                       ${Home.relativeLayout}
+
+Entrar no menu “Explorar”
+    Wait Until Element Is Visible      ${Home.recyclerView}       30          
+    Click Element                      ${Home.recyclerView}
+
+Usar swipe de tela até o 10 item da tela
+    Wait Until Element Is Visible      ${Home.viewGroup}
+    Swipe                               473  1890  493   415  500
+    Swipe                               473  1890  493   415  500
+    Swipe                               473  1890  493   415  500
+
+Clicar no vídeo
+    Wait Until Element Is Visible       ${Home.openVideo}
+    Click Element                       ${Home.openVideo}
 
 
 
