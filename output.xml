@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.0 on win32)" generated="20211029 13:51:51.137" rpa="false" schemaversion="2">
+<suite id="s1" name="Variaveis" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\variaveis">
+<suite id="s1-s1" name="Test Variavel" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\variaveis\test_variavel.robot">
+<test id="s1-s1-t1" name="cenario: brincanco com dicionarios criando uma pessoa pela keyword">
+<kw name="criando meu dicionario">
+<msg timestamp="20211029 13:51:51.166" level="FAIL">No keyword with name 'criando meu dicionario' found.</msg>
+<status status="FAIL" starttime="20211029 13:51:51.166" endtime="20211029 13:51:51.166"/>
+</kw>
+<kw name="imprimir este dicionario">
+<status status="NOT RUN" starttime="20211029 13:51:51.167" endtime="20211029 13:51:51.167"/>
+</kw>
+<status status="FAIL" starttime="20211029 13:51:51.164" endtime="20211029 13:51:51.168">No keyword with name 'criando meu dicionario' found.</status>
+</test>
+<test id="s1-s1-t2" name="cenario: brincanco com dicionarios imprimindo uma pessoa">
+<kw name="imprimir pessoa">
+<msg timestamp="20211029 13:51:51.171" level="FAIL">No keyword with name 'imprimir pessoa' found.</msg>
+<status status="FAIL" starttime="20211029 13:51:51.171" endtime="20211029 13:51:51.171"/>
+</kw>
+<status status="FAIL" starttime="20211029 13:51:51.169" endtime="20211029 13:51:51.172">No keyword with name 'imprimir pessoa' found.</status>
+</test>
+<status status="FAIL" starttime="20211029 13:51:51.161" endtime="20211029 13:51:51.173"/>
+</suite>
+<status status="FAIL" starttime="20211029 13:51:51.139" endtime="20211029 13:51:51.175"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Variaveis">Variaveis</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Test Variavel">Variaveis.Test Variavel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211029 13:51:51.133" level="ERROR">Error in file 'C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\variaveis\test_variavel.robot' on line 1: Unrecognized section header '***Setings***'. Valid sections: 'Settings', 'Variables', 'Test Cases', 'Tasks', 'Keywords' and 'Comments'.</msg>
+</errors>
+</robot>

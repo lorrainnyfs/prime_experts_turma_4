@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.0 on win32)" generated="20211029 23:46:09.376" rpa="false" schemaversion="2">
+<suite id="s1" name="For" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\For">
+<suite id="s1-s1" name="Test For" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\For\test_for.robot">
+<test id="s1-s1-t1" name="Cenario: contando numeros em um determinado 'range'">
+<kw name="contando de &quot;0&quot; ate &quot;10&quot;" library="resource" sourcename="contando de &quot;${num_init}&quot; ate &quot;${num_final}&quot;">
+<msg timestamp="20211029 23:46:09.418" level="TRACE">Arguments: [ ${num_init}='0' | ${num_final}='10' ]</msg>
+<for flavor="IN RANGE">
+<var>${num}</var>
+<value>${num_init}</value>
+<value>${num_final}</value>
+<iter>
+<var name="${num}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.419" level="TRACE">Arguments: [ '\n estou no numero: 0 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.420" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.419" endtime="20211029 23:46:09.420"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.419" endtime="20211029 23:46:09.420"/>
+</iter>
+<iter>
+<var name="${num}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.421" level="TRACE">Arguments: [ '\n estou no numero: 1 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.421" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.421" endtime="20211029 23:46:09.422"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.420" endtime="20211029 23:46:09.422"/>
+</iter>
+<iter>
+<var name="${num}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.422" level="TRACE">Arguments: [ '\n estou no numero: 2 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.423" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.422" endtime="20211029 23:46:09.423"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.422" endtime="20211029 23:46:09.423"/>
+</iter>
+<iter>
+<var name="${num}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.424" level="TRACE">Arguments: [ '\n estou no numero: 3 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.424" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.423" endtime="20211029 23:46:09.424"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.423" endtime="20211029 23:46:09.424"/>
+</iter>
+<iter>
+<var name="${num}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.425" level="TRACE">Arguments: [ '\n estou no numero: 4 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.425" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.424" endtime="20211029 23:46:09.425"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.424" endtime="20211029 23:46:09.425"/>
+</iter>
+<iter>
+<var name="${num}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.426" level="TRACE">Arguments: [ '\n estou no numero: 5 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.427" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.426" endtime="20211029 23:46:09.427"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.426" endtime="20211029 23:46:09.427"/>
+</iter>
+<iter>
+<var name="${num}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.427" level="TRACE">Arguments: [ '\n estou no numero: 6 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.428" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.427" endtime="20211029 23:46:09.428"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.427" endtime="20211029 23:46:09.428"/>
+</iter>
+<iter>
+<var name="${num}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.428" level="TRACE">Arguments: [ '\n estou no numero: 7 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.429" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.428" endtime="20211029 23:46:09.429"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.428" endtime="20211029 23:46:09.429"/>
+</iter>
+<iter>
+<var name="${num}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.429" level="TRACE">Arguments: [ '\n estou no numero: 8 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.429" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.429" endtime="20211029 23:46:09.429"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.429" endtime="20211029 23:46:09.429"/>
+</iter>
+<iter>
+<var name="${num}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n estou no numero: ${num} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.429" level="TRACE">Arguments: [ '\n estou no numero: 9 \n' ]</msg>
+<msg timestamp="20211029 23:46:09.430" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.429" endtime="20211029 23:46:09.430"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.429" endtime="20211029 23:46:09.430"/>
+</iter>
+<status status="PASS" starttime="20211029 23:46:09.418" endtime="20211029 23:46:09.430"/>
+</for>
+<msg timestamp="20211029 23:46:09.430" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.418" endtime="20211029 23:46:09.430"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.417" endtime="20211029 23:46:09.431"/>
+</test>
+<test id="s1-s1-t2" name="Cenario: falando os paises nos quais já visitamos">
+<kw name="contando em que pais viajamos" library="resource">
+<msg timestamp="20211029 23:46:09.433" level="TRACE">Arguments: [  ]</msg>
+<for flavor="IN">
+<var>${pais}</var>
+<value>@{lista_pais}</value>
+<iter>
+<var name="${pais}">França</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n Já viajamos por ${pais} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.434" level="TRACE">Arguments: [ '\n Já viajamos por França \n' ]</msg>
+<msg timestamp="20211029 23:46:09.434" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.433" endtime="20211029 23:46:09.435"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.433" endtime="20211029 23:46:09.435"/>
+</iter>
+<iter>
+<var name="${pais}">Italia</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n Já viajamos por ${pais} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.435" level="TRACE">Arguments: [ '\n Já viajamos por Italia \n' ]</msg>
+<msg timestamp="20211029 23:46:09.436" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.435" endtime="20211029 23:46:09.436"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.435" endtime="20211029 23:46:09.436"/>
+</iter>
+<iter>
+<var name="${pais}">Suiça</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n Já viajamos por ${pais} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.436" level="TRACE">Arguments: [ '\n Já viajamos por Suiça \n' ]</msg>
+<msg timestamp="20211029 23:46:09.437" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.436" endtime="20211029 23:46:09.437"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.436" endtime="20211029 23:46:09.437"/>
+</iter>
+<iter>
+<var name="${pais}">Japão</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n Já viajamos por ${pais} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.438" level="TRACE">Arguments: [ '\n Já viajamos por Japão \n' ]</msg>
+<msg timestamp="20211029 23:46:09.438" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.437" endtime="20211029 23:46:09.438"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.437" endtime="20211029 23:46:09.438"/>
+</iter>
+<iter>
+<var name="${pais}">Grecia</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n Já viajamos por ${pais} \n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 23:46:09.439" level="TRACE">Arguments: [ '\n Já viajamos por Grecia \n' ]</msg>
+<msg timestamp="20211029 23:46:09.439" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.439" endtime="20211029 23:46:09.439"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.438" endtime="20211029 23:46:09.439"/>
+</iter>
+<status status="PASS" starttime="20211029 23:46:09.433" endtime="20211029 23:46:09.439"/>
+</for>
+<msg timestamp="20211029 23:46:09.440" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 23:46:09.433" endtime="20211029 23:46:09.440"/>
+</kw>
+<status status="PASS" starttime="20211029 23:46:09.432" endtime="20211029 23:46:09.440"/>
+</test>
+<status status="PASS" starttime="20211029 23:46:09.407" endtime="20211029 23:46:09.441"/>
+</suite>
+<status status="PASS" starttime="20211029 23:46:09.391" endtime="20211029 23:46:09.443"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="For">For</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="Test For">For.Test For</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

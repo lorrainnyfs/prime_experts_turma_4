@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.0 on win32)" generated="20211029 22:16:46.155" rpa="false" schemaversion="2">
+<suite id="s1" name="Argumentos" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\argumentos">
+<suite id="s1-s1" name="Test Argumentos" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\argumentos\test_argumentos.robot">
+<test id="s1-s1-t1" name="cenario: criando email por argumentos embutidos">
+<kw name="Dado que eu recebo o nome &quot;lorrainny&quot; sobrenome &quot;ferreira&quot; e a idade &quot;29&quot;" library="resource" sourcename="Dado que eu recebo o nome &quot;${nome}&quot; sobrenome &quot;${sobrenome}&quot; e a idade &quot;${idade}&quot;">
+<msg timestamp="20211029 22:16:46.192" level="TRACE">Arguments: [ ${nome}='lorrainny' | ${sobrenome}='ferreira' | ${idade}='29' ]</msg>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${nome_email}</arg>
+<arg>${nome}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20211029 22:16:46.192" level="TRACE">Arguments: [ '${nome_email}' | '${nome}' ]</msg>
+<msg timestamp="20211029 22:16:46.193" level="INFO">${nome_email} = lorrainny</msg>
+<msg timestamp="20211029 22:16:46.193" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.192" endtime="20211029 22:16:46.193"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${sobrenome_email}</arg>
+<arg>${sobrenome}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20211029 22:16:46.193" level="TRACE">Arguments: [ '${sobrenome_email}' | '${sobrenome}' ]</msg>
+<msg timestamp="20211029 22:16:46.193" level="INFO">${sobrenome_email} = ferreira</msg>
+<msg timestamp="20211029 22:16:46.193" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.193" endtime="20211029 22:16:46.193"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${idade_email}</arg>
+<arg>${idade}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20211029 22:16:46.193" level="TRACE">Arguments: [ '${idade_email}' | '${idade}' ]</msg>
+<msg timestamp="20211029 22:16:46.193" level="INFO">${idade_email} = 29</msg>
+<msg timestamp="20211029 22:16:46.193" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.193" endtime="20211029 22:16:46.193"/>
+</kw>
+<msg timestamp="20211029 22:16:46.193" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.192" endtime="20211029 22:16:46.193"/>
+</kw>
+<kw name="Quando monto o meu email" library="resource">
+<msg timestamp="20211029 22:16:46.194" level="TRACE">Arguments: [  ]</msg>
+<kw name="Catenate" library="BuiltIn">
+<var>${email}</var>
+<arg>${nome_email}_${sobrenome_email}_${idade_email}_${prefixo_email}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20211029 22:16:46.194" level="TRACE">Arguments: [ 'lorrainny_ferreira_29_@robot.com' ]</msg>
+<msg timestamp="20211029 22:16:46.195" level="TRACE">Return: 'lorrainny_ferreira_29_@robot.com'</msg>
+<msg timestamp="20211029 22:16:46.195" level="INFO">${email} = lorrainny_ferreira_29_@robot.com</msg>
+<status status="PASS" starttime="20211029 22:16:46.194" endtime="20211029 22:16:46.195"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${email_pronto}</arg>
+<arg>${email}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20211029 22:16:46.195" level="TRACE">Arguments: [ '${email_pronto}' | '${email}' ]</msg>
+<msg timestamp="20211029 22:16:46.195" level="INFO">${email_pronto} = lorrainny_ferreira_29_@robot.com</msg>
+<msg timestamp="20211029 22:16:46.195" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.195" endtime="20211029 22:16:46.195"/>
+</kw>
+<msg timestamp="20211029 22:16:46.195" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.194" endtime="20211029 22:16:46.195"/>
+</kw>
+<kw name="Entao imprimo o meu novo email" library="resource">
+<msg timestamp="20211029 22:16:46.196" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\n Bem vindo ao mundo Robot, este é seu novo email:</arg>
+<arg>${email_pronto}!!\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211029 22:16:46.196" level="TRACE">Arguments: [ '\n\n Bem vindo ao mundo Robot, este é seu novo email:' | 'lorrainny_ferreira_29_@robot.com!!\n' ]</msg>
+<msg timestamp="20211029 22:16:46.197" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.196" endtime="20211029 22:16:46.197"/>
+</kw>
+<msg timestamp="20211029 22:16:46.197" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211029 22:16:46.196" endtime="20211029 22:16:46.197"/>
+</kw>
+<status status="PASS" starttime="20211029 22:16:46.191" endtime="20211029 22:16:46.198"/>
+</test>
+<status status="PASS" starttime="20211029 22:16:46.182" endtime="20211029 22:16:46.200"/>
+</suite>
+<status status="PASS" starttime="20211029 22:16:46.156" endtime="20211029 22:16:46.202"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Argumentos">Argumentos</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Argumentos">Argumentos.Test Argumentos</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211029 22:16:46.149" level="ERROR">Error in file 'C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\argumentos\resource.robot' on line 9: Non-existing setting '&amp;{pessoa}'.</msg>
+<msg timestamp="20211029 22:16:46.150" level="ERROR">Error in file 'C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\argumentos\resource.robot' on line 10: Non-existing setting '@{Lista_frutas}'.</msg>
+<msg timestamp="20211029 22:16:46.187" level="ERROR">Error in file 'C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\argumentos\resource.robot' on line 9: Non-existing setting '&amp;{pessoa}'.</msg>
+<msg timestamp="20211029 22:16:46.188" level="ERROR">Error in file 'C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\argumentos\resource.robot' on line 10: Non-existing setting '@{Lista_frutas}'.</msg>
+</errors>
+</robot>

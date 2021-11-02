@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.0 on win32)" generated="20211030 02:20:34.753" rpa="false" schemaversion="2">
+<suite id="s1" name="Setup Teardown" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\setup_teardown">
+<suite id="s1-s1" name="Test Setup Teardown" source="C:\Projetos\Curso Prime 25-10-21\prime_experts_turma_4\setup_teardown\test_setup_teardown.robot">
+<kw name="estou executando antes de tudo e todos" library="resource" type="SETUP">
+<msg timestamp="20211030 02:20:34.793" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nestou executando no setup da suite de testes\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211030 02:20:34.793" level="TRACE">Arguments: [ '\n\nestou executando no setup da suite de testes\n' ]</msg>
+<msg timestamp="20211030 02:20:34.794" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.793" endtime="20211030 02:20:34.794"/>
+</kw>
+<msg timestamp="20211030 02:20:34.795" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.793" endtime="20211030 02:20:34.795"/>
+</kw>
+<test id="s1-s1-t1" name="cenario: brincando com setups e teardowns">
+<kw name="estou executando antes do teste" library="resource" type="SETUP">
+<msg timestamp="20211030 02:20:34.796" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nestou executando no setup do teste\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211030 02:20:34.796" level="TRACE">Arguments: [ '\n\nestou executando no setup do teste\n' ]</msg>
+<msg timestamp="20211030 02:20:34.797" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.796" endtime="20211030 02:20:34.797"/>
+</kw>
+<msg timestamp="20211030 02:20:34.797" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.795" endtime="20211030 02:20:34.797"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nExecutando meu cenario !!!\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211030 02:20:34.798" level="TRACE">Arguments: [ '\n\nExecutando meu cenario !!!\n' ]</msg>
+<msg timestamp="20211030 02:20:34.799" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.798" endtime="20211030 02:20:34.799"/>
+</kw>
+<kw name="estou executando depois do teste" library="resource" type="TEARDOWN">
+<msg timestamp="20211030 02:20:34.800" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nestou executando no teardown do teste\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211030 02:20:34.800" level="TRACE">Arguments: [ '\n\nestou executando no teardown do teste\n' ]</msg>
+<msg timestamp="20211030 02:20:34.801" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.800" endtime="20211030 02:20:34.801"/>
+</kw>
+<msg timestamp="20211030 02:20:34.801" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.800" endtime="20211030 02:20:34.801"/>
+</kw>
+<status status="PASS" starttime="20211030 02:20:34.795" endtime="20211030 02:20:34.802"/>
+</test>
+<kw name="estou executando depois de tudo e todos" library="resource" type="TEARDOWN">
+<msg timestamp="20211030 02:20:34.803" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log To Console" library="BuiltIn">
+<arg>\n\nestou executando no teardown da suite de testes\n</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20211030 02:20:34.804" level="TRACE">Arguments: [ '\n\nestou executando no teardown da suite de testes\n' ]</msg>
+<msg timestamp="20211030 02:20:34.804" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.803" endtime="20211030 02:20:34.804"/>
+</kw>
+<msg timestamp="20211030 02:20:34.804" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20211030 02:20:34.803" endtime="20211030 02:20:34.804"/>
+</kw>
+<status status="PASS" starttime="20211030 02:20:34.775" endtime="20211030 02:20:34.804"/>
+</suite>
+<status status="PASS" starttime="20211030 02:20:34.753" endtime="20211030 02:20:34.805"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Setup Teardown">Setup Teardown</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Setup Teardown">Setup Teardown.Test Setup Teardown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
